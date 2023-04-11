@@ -7,6 +7,7 @@ type SvgProps = {
   color?: string;
   className?: string;
 };
+
 const Svg = (props: SvgProps) => {
   const { src, width, height, color, className } = props;
   return (
