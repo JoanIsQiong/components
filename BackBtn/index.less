@@ -1,0 +1,24 @@
+.close {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .backBtn {
+    position: fixed;
+    top: 30px;
+    left: 35px;
+    width: 129px;
+    height: 129px;
+    background: url('@/assets/images/back.png') no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+}
