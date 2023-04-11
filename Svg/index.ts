@@ -12,13 +12,14 @@ const Svg = (props: SvgProps) => {
   return (
     <View
       className={`${className || ''} svgWrap`}
-      style={`width: ${width}rpx; height: ${height}rpx;overflow: hidden;`}
+      style={`width: ${Number(width)}rpx; height: ${Number(height)}rpx;overflow: hidden;`}
     >
       <Image
         src={src}
-        style={`width: 100%;height: 100%;border-right: ${10*Number(width) + 300}rpx solid transparent;transform: translateX(-${width}rpx);filter: drop-shadow(${width}rpx 0 ${color});`}
+        style={`width: 100%;height: 100%;border-right: ${10 * Number(width) + 300}rpx solid transparent;transform: translateX(-${Number(width)}rpx);filter: drop-shadow(${width}rpx 0 ${color});`}
       />
     </View>
   );
 };
+
 export default Svg;
